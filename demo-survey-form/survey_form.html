@@ -1,0 +1,159 @@
+<div class="container">
+  
+  <header class="header">
+    Favorite Programming Language Survey Form
+  
+  <p id="description">This survey is about your favorite programming language</p>
+  </header>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label">Name</label>
+        <input 
+               type="text"
+               name="name"
+               id = "name"
+               class="form-control"
+               placeholder="Enter your name"
+               required />
+       
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label">Email</label>
+        <input 
+               type="text"
+               name="email"
+               id = "email"
+               class="form-control"
+               placeholder="yourEmail@address.com"
+               required />
+    </div>
+    
+    <div class="form-group">
+      <label id="age-label">Age (Optional)</label>
+        <input 
+               type="number"
+               name="age"
+               id = "number"
+               class="form-control"
+               placeholder="yourEmail@address.com"/>
+    </div>
+    
+    <div class="form-group">
+  <p>Which of the following best describes your current profession? </p>      
+      <select name="role" id="dropdown" class="form-group" required>
+        <option disabled selected value>Select your profession</option>
+        <option value="student">Student</option>
+        <option value="developer">Software Developer/Engineer</option>
+        <option value="learner">Curious Learner</option>
+        <option value="designer">Web Designer</option>
+        <option value="prefer-no">Prefer not to say</option>
+    <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Which of the following is your favorite programming language? </p>
+      <label>
+        <input name="fav-language"
+               value="c-lang"
+               type="radio"
+               class="input-radio"
+               checked>
+        C Language
+      </label>
+      <label>
+        <input name="fav-language"
+               value="cpp-lang"
+               type="radio"
+               class="input-radio"
+               >
+        C++
+      </label><label>
+        <input name="fav-language"
+               value="python-lang"
+               type="radio"
+               class="input-radio"
+               >
+        Python
+      </label><label>
+        <input name="fav-language"
+               value="javascript-lang"
+               type="radio"
+               class="input-radio"
+               >
+        JavaScript
+      </label><label>
+        <input name="fav-language"
+               value="java-lang"
+               type="radio"
+               class="input-radio"
+               >
+        Java
+      </label><label>
+        <input name="fav-language"
+               value="kotlin-lang"
+               type="radio"
+               class="input-radio"
+               >
+        Kotlin
+      </label><label>
+        <input name="fav-language"
+               value="cs-lang"
+               type="radio"
+               class="input-radio"
+               >
+        C#
+      </label>
+      <label>
+        <input name="fav-language"
+               value="ruby-lang"
+               type="radio"
+               class="input-radio"
+               >
+        Ruby
+      </label> <label>
+        <input name="fav-language"
+               value="swift-lang"
+               type="radio"
+               class="input-radio"
+               >
+        Swift
+      </label>
+      <label>
+        <input name="fav-language"
+               value="other-lang"
+               type="radio"
+               class="input-radio"
+               >
+        Other
+      </label>
+    </div>
+  
+     <div class="form-group">
+      <p class="description">What is your favorite thing about this programming language </p>
+       <textarea name="desription" id="description"
+                 class="input-textarea"
+                 placeholder="I like it because its awesome"></textarea>
+   
+    </div>
+    
+    <div class="form-group">
+      <p class="description">What is your favorite thing about this programming language </p>
+       <textarea name="desription-improve" id="description-improve"
+                 class="input-textarea"
+                 placeholder="I would like to see XYZ support in this programming language"></textarea>
+   
+    </div>
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    
+  </form>
+ 
+  
+</div>
