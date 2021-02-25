@@ -66,6 +66,7 @@ nav{
   display:inline;
   margin-right: 16px;
 }
+
 #img-and-name{
   display: flex;
   justify-content: space-between;
@@ -84,9 +85,17 @@ p{
   line-height: 1.5;
 }
 #our-mission{
+  top: -100px;
+  display: block;
   background-color: #29b9e1;
   text-align: center;
   padding: 20px 40px;
+  padding-top: 100px;
+    margin-top: -100px;
+}
+#our-mission span{
+  position: absolute;
+  top: -200px;
 }
 h2{
   font-size: 35px;
