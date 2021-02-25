@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 *{
  margin:0; 
@@ -74,4 +74,21 @@ nav{
   display: inline-block;
   white-space: nowrap;
   color: aliceblue;
+  font-size: 26px;
+}
+p{
+  font-weight: 400;
+  font-size: large;
+  word-spacing: 55%;
+  letter-spacing: 18%;
+  line-height: 1.5;
+}
+#our-mission{
+  background-color: #29b9e1;
+  text-align: center;
+  padding: 20px 40px;
+}
+h2{
+  font-size: 35px;
+  text-shadow: #fff;
 }
