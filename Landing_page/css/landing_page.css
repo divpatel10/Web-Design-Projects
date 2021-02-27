@@ -165,9 +165,28 @@ iframe{
   padding: 10px 18px;
   background-color: #31d2ff;
   font-weight: 400;
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.bottles > button:hover{
+  background-color: #396be8;
+  transition: background-color 0.5s;
 }
 .img-pricing{
   width: 15%;
   padding-bottom: 10px;
   height: auto;
+}
+
+footer{
+  margin-top: 25px;
+  background-color: #31d2ff;
+}
+footer > ul{
+  display: flex;
+  justify-content: flex-end;
+}
+footer > ul > li {
+  padding: 0 10px;
 }
