@@ -182,6 +182,7 @@ iframe{
 footer{
   margin-top: 25px;
   background-color: #31d2ff;
+  vertical-align: middle;
 }
 footer > ul{
   display: flex;
@@ -190,3 +191,14 @@ footer > ul{
 footer > ul > li {
   padding: 0 10px;
 }
+footer > span{
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #fff;
+  padding-right: 5px;
+  
+}
+
+
