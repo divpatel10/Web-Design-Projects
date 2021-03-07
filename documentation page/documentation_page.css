@@ -1,70 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;300;600&display=swap');
+*{
   box-sizing: border-box;
 }
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
+body{
+  font-family: 'Roboto Slab', sans-serif;
   margin: 0;
+  display: flex;
 }
-
-nav {
-  background-color: #eee;
-  border-right: 2px solid #777;
+nav{
+  min-width: 250px;
+  background-color: #fbfbfb;
   height: 100vh;
-  min-width: 300px;
+  border-right: 0.5px solid #ddd;
+  padding: 20px 5px;
 }
-
-nav header {
+main{
+  background-color: white;
+  height: 100vh;
+  overflow-y: scroll;
+  flex: 1;
+}
+section{
   padding: 15px;
+  line-height: 1.5;
 }
-
-nav a {
-  border-top: 1px solid #777;
+header{
+  font-size: 20px;
+  font-weight: 700;
+}
+nav a{
   color: #000;
   display: block;
   padding: 15px;
+  border-top: 1px solid #ddd;
   text-decoration: none;
+ 
 }
-
-main {
-  height: 100vh;
-  overflow-y: scroll;
-}
-
-section {
-  padding: 20px;
-  line-height: 1.5;
-}
-
-header {
-  font-size: 24px;
+p{
   font-weight: 500;
+  font-style: bold;
 }
-
-pre {
-  padding-top: 14px;
+strong{
   background-color: #ddd;
-}
 
-@media (max-width: 600px) {
-  body {
-    flex-direction: column;
-  }
-  
-  nav {
-    border-right: none;
-    border-bottom: 2px solid #777;
-    height: 200px;
-    overflow-y: scroll;
-    width: 100%;
-  }
-  
-  main {
-    height: auto;
-    overflow-y: none;
-    width: 100%;
-  }
 }
