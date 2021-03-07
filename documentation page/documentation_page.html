@@ -4,23 +4,29 @@
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<nav id="nav-bar">
+<nav id="navbar">
   <header>C# Documentation Page</header>
-  <a href="#introduction" class="nav_link">Introduction</a>
-  <a href="#.net_architecture" class="nav_link">.NET Architecture</a>
-  <a href="#hello_world" class="nav_link">Hello World</a>
-  <a href="#types_and_variables" class="nav_link">Types and Variables</a>
-  <a href="#program_structure" class="nav_link">Program Structure</a>
+  <a href="#introduction" class="nav-link">Introduction</a>
+  <a href="#.net_architecture" class="nav-link">.NET Architecture</a>
+  <a href="#hello_world" class="nav-link">Hello World</a>
+  <a href="#types_and_variables" class="nav-link">Types and Variables</a>
+  <a href="#program_structure" class="nav-link">Program Structure</a>
 </nav>
 <main id="main-doc">
   
   <section class="main-section" id="introduction">
     <header>Introduction</header>
-    <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in the .NET ecosystem. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. <br>
-      C# is an object-oriented, component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices. <br> <br>
-      Some major features of C# are:
+    <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in the .NET ecosystem. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. 
+          </p>
+
+      <p>
+         C# is an object-oriented, component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices.
+      </p>
+      <p>
+              Some major features of C# are:
+
+      </p>
       
-    </p>
     <ul>
       <li>Garbage collection automatically reclaims memory occupied by unreachable unused objects.</li>
       <li>Nullable types guard against variables that don't refer to allocated objects. </li>
@@ -33,36 +39,55 @@
   </section>
   <section class="main-section" id=".net_architecture">
     <header>.NET Architecture</header>
-    <p>
-      C# programs run on .NET, a virtual execution system called the common language runtime (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard. The CLI is the basis for creating execution and development environments in which languages and libraries work together seamlessly.
-<br> <br>
-Source code written in C# is compiled into an intermediate language (IL) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored in an assembly, typically with an extension of .dll. An assembly contains a manifest that provides information about the assembly's types, version, and culture.
-<br> <br>
-When the C# program is executed, the assembly is loaded into the CLR. The CLR performs Just-In-Time (JIT) compilation to convert the IL code to native machine instructions. The CLR provides other services related to automatic garbage collection, exception handling, and resource management. Code that's executed by the CLR is sometimes referred to as "managed code," in contrast to "unmanaged code," which is compiled into native machine language that targets a specific platform.
-<br> <br>
-Language interoperability is a key feature of .NET. IL code produced by the C# compiler conforms to the Common Type Specification (CTS). IL code generated from C# can interact with code that was generated from the .NET versions of F#, Visual Basic, C++, or any of more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages, and the types can reference each other as if they were written in the same language.
-<br> <br>
-In addition to the run time services, .NET also includes extensive libraries. These libraries support many different workloads. They're organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to web application frameworks to Windows Forms controls. The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.
+    
+    
+    <p>C# programs run on .NET, a virtual execution system called the common language runtime (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard. The CLI is the basis for creating execution and development environments in which languages and libraries work together seamlessly. </p>
+    
+    <p>Source code written in C# is compiled into an intermediate language (IL) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored in an assembly, typically with an extension of .dll. An assembly contains a manifest that provides information about the assembly's types, version, and culture.
+</p> 
+    <p>When the C# program is executed, the assembly is loaded into the CLR. The CLR performs Just-In-Time (JIT) compilation to convert the IL code to native machine instructions. The CLR provides other services related to automatic garbage collection, exception handling, and resource management. Code that's executed by the CLR is sometimes referred to as "managed code," in contrast to "unmanaged code," which is compiled into native machine language that targets a specific platform.
+ </p>
+   
+    <p>Language interoperability is a key feature of .NET. IL code produced by the C# compiler conforms to the Common Type Specification (CTS). IL code generated from C# can interact with code that was generated from the .NET versions of F#, Visual Basic, C++, or any of more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages, and the types can reference each other as if they were written in the same language.
     </p>
+
+    <p>In addition to the run time services, .NET also includes extensive libraries. These libraries support many different workloads. They're organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to web application frameworks to Windows Forms controls. The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.
+    </p>
+    
   </section>
   <section class="main-section" id="hello_world">
     <header>Hello World</header>
-    <p>
-      The "Hello, World" program starts with a using directive that references the System namespace. Namespaces provide a hierarchical means of organizing C# programs and libraries. Namespaces contain types and other namespaces—for example, the System namespace contains a number of types, such as the Console class referenced in the program, and a number of other namespaces, such as IO and Collections. A using directive that references a given namespace enables unqualified use of the types that are members of that namespace. Because of the using directive, the program can use Console.WriteLine as shorthand for System.Console.WriteLine.
-<br><br>
-The Hello class declared by the "Hello, World" program has a single member, the method named Main. The Main method is declared with the static modifier. While instance methods can reference a particular enclosing object instance using the keyword this, static methods operate without reference to a particular object. By convention, a static method named Main serves as the entry point of a C# program.
-<br><br>
-The output of the program is produced by the WriteLine method of the Console class in the System namespace. This class is provided by the standard class libraries, which, by default, are automatically referenced by the compiler.
+    
+    <h3>A Hello World Program in C#</h3>
+    <pre>
+      <code>
+         using System;
+         
+         class Hello
+         {
+              static void Main()
+              {
+                Console.WriteLine("Hello, World");
+              }
+         }
+      </code>
+    </pre>  
+  
+    
+    The "Hello, World" program starts with a <strong>using</strong> directive that references the <strong>System</strong>  namespace. Namespaces provide a hierarchical means of organizing C# programs and libraries. Namespaces contain types and other namespaces—for example, the <strong>System</strong> namespace contains a number of types, such as the <strong>Console</strong> class referenced in the program, and a number of other namespaces, such as <strong>IO</strong>  and <strong>Collections</strong>. A <strong>using</strong> directive that references a given namespace enables unqualified use of the types that are members of that namespace. Because of the <strong>using</strong> directive, the program can use <strong>Console.WriteLine</strong> as shorthand for <strong>System.Console.WriteLine</strong>.
+</pr>
+      <p>The <strong>Hello</strong> class declared by the "Hello, World" program has a single member, the method named <strong>Main</strong>. The <strong>Main</strong> method is declared with the <strong>static</strong> modifier. While instance methods can reference a particular enclosing object instance using the keyword <strong>this</strong>, static methods operate without reference to a particular object. By convention, a static method named <strong>Main</strong> serves as the entry point of a C# program.
+</p>
+      <p>The output of the program is produced by the <strong>WriteLine</strong> method of the <strong>Console</strong> class in the <strong>System</strong> namespace. This class is provided by the standard class libraries, which, by default, are automatically referenced by the compiler.
     </p>
   </section>
   <section class="main-section" id="types_and_variables">
     <header>Types and Variables</header>
-    <p>
-      here are two kinds of types in C#: value types and reference types. Variables of value types directly contain their data. Variables of reference types store references to their data, the latter being known as objects. With reference types, it's possible for two variables to reference the same object and possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it isn't possible for operations on one to affect the other (except for ref and out parameter variables).
-<br><br>
-An identifier is a variable name. An identifier is a sequence of unicode characters without any whitespace. An identifier may be a C# reserved word, if it's prefixed by @. Using a reserved word as an identifier can be useful when interacting with other languages.
-<br><br>
-C#'s value types are further divided into simple types, enum types, struct types, nullable value types, and tuple value types. C#'s reference types are further divided into class types, interface types, array types, and delegate types.
+    <p>here are two kinds of types in C#: value types and reference types. Variables of value types directly contain their data. Variables of reference types store references to their data, the latter being known as objects. With reference types, it's possible for two variables to reference the same object and possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it isn't possible for operations on one to affect the other (except for <strong>ref</strong> and <strong>out</strong> parameter variables).
+</p>
+    <p>An identifier is a variable name. An identifier is a sequence of unicode characters without any whitespace. An identifier may be a C# reserved word, if it's prefixed by @. Using a reserved word as an identifier can be useful when interacting with other languages.
+</p>
+    <p>C#'s value types are further divided into simple types, enum types, struct types, nullable value types, and tuple value types. C#'s reference types are further divided into class types, interface types, array types, and delegate types.
     </p>
   </section>
   <section class="main-section" id="program_structure">

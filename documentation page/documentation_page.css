@@ -1,42 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;300;500&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+
+* {
   box-sizing: border-box;
 }
-body{
-  font-family: 'Roboto Slab', sans-serif;
-  margin: 0;
+
+body {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
+  margin: 0;
 }
-nav{
-  min-width: 250px;
-  background-color: #fbfbfb;
+
+nav {
+  background-color: #eee;
+  border-right: 2px solid #777;
   height: 100vh;
-  border-right: 0.5px solid #ddd;
-  padding: 20px 5px;
+  min-width: 300px;
 }
-main{
-  background-color: white;
-  height: 100vh;
-  overflow-y: scroll;
-  flex: 1;
-}
-section{
+
+nav header {
   padding: 15px;
-  line-height: 1.5;
 }
-header{
-  font-size: 20px;
-  font-weight: 500;
-}
-nav a{
+
+nav a {
+  border-top: 1px solid #777;
   color: #000;
   display: block;
   padding: 15px;
-  border-top: 1px solid #ddd;
   text-decoration: none;
- 
 }
-p{
-  font-weight: 400;
-  font-style: bold;
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+section {
+  padding: 20px;
+  line-height: 1.5;
+}
+
+header {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+pre {
+  padding-top: 14px;
+  background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  
+  nav {
+    border-right: none;
+    border-bottom: 2px solid #777;
+    height: 200px;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  
+  main {
+    height: auto;
+    overflow-y: none;
+    width: 100%;
+  }
 }
