@@ -73,6 +73,26 @@
       </code>
     </pre>  
   
+    <h3>Writeline or Write is a common way to output something in c#</h3>
+    <pre>
+      <code>
+         using System;
+         
+         class Hello
+         {
+              static void Main()
+              {
+                Console.WriteLine("Hello World!");  
+                Console.WriteLine("I will print on a new line.");
+                
+                Console.Write("Hello World! ");
+                Console.Write("I will print on the same line.");                }
+         }
+      </code>
+    </pre>  
+
+
+    
     
     The "Hello, World" program starts with a <strong>using</strong> directive that references the <strong>System</strong>  namespace. Namespaces provide a hierarchical means of organizing C# programs and libraries. Namespaces contain types and other namespaces—for example, the <strong>System</strong> namespace contains a number of types, such as the <strong>Console</strong> class referenced in the program, and a number of other namespaces, such as <strong>IO</strong>  and <strong>Collections</strong>. A <strong>using</strong> directive that references a given namespace enables unqualified use of the types that are members of that namespace. Because of the <strong>using</strong> directive, the program can use <strong>Console.WriteLine</strong> as shorthand for <strong>System.Console.WriteLine</strong>.
 </pr>
@@ -89,6 +109,24 @@
 </p>
     <p>C#'s value types are further divided into simple types, enum types, struct types, nullable value types, and tuple value types. C#'s reference types are further divided into class types, interface types, array types, and delegate types.
     </p>
+
+    <h3>Syntax</h3>
+    <pre>
+      <code>
+        type variableName = value;
+
+        //examples
+        int number = 50;  // data type is integer
+        string name = "Jebb" // data type is string
+      </code>
+    </pre>  
+
+    <p>Some of the data types and their keywords are: </p>
+    <code>int</code> <br>
+    <code>double</code> <br>
+    <code>char</code> <br>
+    <code>string</code> <br>
+    <code>bool</code> <br>
   </section>
   <section class="main-section" id="program_structure">
     <header>Program Structure</header>
