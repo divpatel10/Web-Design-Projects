@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+nav{
+  background-color: #F56600;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+nav a{
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  
+}
+ul{
+  list-style: none;
+}
+.nav>ul{
+  display: flex;
+  margin-right: 2.5rem;
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  margin-top:0;
+  margin-bottom:0;
+  padding:0;
+  
+}
+
+.nav>ul>li{
+  padding:1.2rem;
+}
+
+nav>ul li:hover{
+  background-color: #522D80;
+  margin:0;
+}
+
+#welcome-section{
+  
+  background-color: #fff;
+  background-image: linear-gradient(45deg, #000 0%, #333 100%);
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  height:100vh;
+  color: #fff;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.welcome-section>h1{
+  font-size: 3.3rem;
+}
+
+.welcome-section>p{
+  font-size: 1.5rem;
+}
+
+#projects{
+text-align: center;
+padding: 4rem 2rem;
+display:flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+.projects-section-header{
+  font-size: 2rem;
+  max-width: 650px;
+  margin: 0 auto 6rem auto;
+  
+}
+
+
+.projects-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(5em, 1fr));
+  grid-gap: 5rem 10rem;
+  max-width: 900px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 50em) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects-grid>a>img{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border: 3px solid #522D80;
+  border-radius: 5%; 
+  align-items: center;
+}
+
+
