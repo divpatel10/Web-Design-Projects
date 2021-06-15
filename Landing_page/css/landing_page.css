@@ -19,7 +19,7 @@ body {
 }
 
 #header-img{
-  max-width:20%;
+  max-width:10%;
   height: auto;
   display: inline-block;
   margin-right: 20px;
@@ -77,6 +77,9 @@ nav{
   white-space: nowrap;
   color: aliceblue;
   font-size: 26px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
 }
 p{
   font-weight: 400;
@@ -184,6 +187,8 @@ footer{
   margin-top: 25px;
   background-color: #31d2ff;
   vertical-align: middle;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 footer > ul{
   display: flex;
